@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="MBCRecomHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTM-ot-HPw">
+                    <rect key="frame" x="8" y="15" width="5" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.19431350519999999" blue="0.22552734599999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="fMb-ST-EMg"/>
+                        <constraint firstAttribute="height" constant="20" id="zpo-0U-LHe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIH-gR-wlQ">
+                    <rect key="frame" x="18" y="18" width="70" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="pIt-mX-OZe"/>
+                        <constraint firstAttribute="height" constant="20" id="x2i-68-jAw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWe-mx-gA8" customClass="MBCRecomHeaderVie">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" red="0.74509803919999995" green="0.75294117650000003" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="ABf-Ie-58o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMp-ZV-vCL">
+                    <rect key="frame" x="242" y="15" width="70" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Gg9-hd-y1c"/>
+                        <constraint firstAttribute="height" constant="20" id="Kot-Z2-jpx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.74509803919999995" green="0.75294117650000003" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="oMp-ZV-vCL" firstAttribute="top" secondItem="SWe-mx-gA8" secondAttribute="bottom" constant="5" id="839-GU-02w"/>
+                <constraint firstItem="SWe-mx-gA8" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="CxO-Rp-xo2"/>
+                <constraint firstItem="bIH-gR-wlQ" firstAttribute="top" secondItem="SWe-mx-gA8" secondAttribute="bottom" constant="8" id="DJS-nk-a8K"/>
+                <constraint firstItem="SWe-mx-gA8" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Hxb-Fi-cSn"/>
+                <constraint firstItem="mTM-ot-HPw" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="M0W-zF-p0L"/>
+                <constraint firstItem="bIH-gR-wlQ" firstAttribute="leading" secondItem="mTM-ot-HPw" secondAttribute="trailing" constant="5" id="gY2-uP-sbu"/>
+                <constraint firstAttribute="trailing" secondItem="SWe-mx-gA8" secondAttribute="trailing" id="keS-VQ-7ea"/>
+                <constraint firstItem="mTM-ot-HPw" firstAttribute="top" secondItem="SWe-mx-gA8" secondAttribute="bottom" constant="5" id="uoW-fy-bPV"/>
+                <constraint firstAttribute="trailing" secondItem="oMp-ZV-vCL" secondAttribute="trailing" constant="8" id="xjv-TX-pMC"/>
+            </constraints>
+            <connections>
+                <outlet property="goUp" destination="oMp-ZV-vCL" id="XCw-1L-yzq"/>
+                <outlet property="name" destination="bIH-gR-wlQ" id="xsL-7L-fpC"/>
+            </connections>
+            <point key="canvasLocation" x="320" y="357"/>
+        </collectionReusableView>
+    </objects>
+</document>
